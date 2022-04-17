@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PersonalCLVCell" customModule="ChatAppPro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="468" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="468" height="48"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconoir_user" translatesAutoresizingMaskIntoConstraints="NO" id="ntu-3v-GDN">
+                        <rect key="frame" x="20" y="12" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ntu-3v-GDN" secondAttribute="height" multiplier="1:1" id="tan-LL-2Yx"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Next" translatesAutoresizingMaskIntoConstraints="NO" id="CL7-IB-kID">
+                        <rect key="frame" x="434" y="12" width="24" height="24"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tài khoản và bảo mật" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjx-oY-aRi">
+                        <rect key="frame" x="64" y="15" width="145" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ntu-3v-GDN" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.0512821" id="2nw-rN-Ifq"/>
+                <constraint firstItem="Hjx-oY-aRi" firstAttribute="centerY" secondItem="ntu-3v-GDN" secondAttribute="centerY" id="4gh-fV-DjH"/>
+                <constraint firstItem="ntu-3v-GDN" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="FHg-Nk-Tke"/>
+                <constraint firstItem="CL7-IB-kID" firstAttribute="centerY" secondItem="Hjx-oY-aRi" secondAttribute="centerY" id="P2H-4F-4kH"/>
+                <constraint firstItem="ntu-3v-GDN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Vgf-Lb-2mf"/>
+                <constraint firstItem="Hjx-oY-aRi" firstAttribute="leading" secondItem="ntu-3v-GDN" secondAttribute="trailing" constant="20" id="jL3-44-OKl"/>
+                <constraint firstAttribute="trailing" secondItem="CL7-IB-kID" secondAttribute="trailing" constant="10" id="tJv-B9-d17"/>
+            </constraints>
+            <size key="customSize" width="468" height="48"/>
+            <connections>
+                <outlet property="iconPersonal" destination="ntu-3v-GDN" id="UCe-oM-ZCi"/>
+                <outlet property="lblNamePersional" destination="Hjx-oY-aRi" id="BLQ-CE-oEM"/>
+            </connections>
+            <point key="canvasLocation" x="226.08695652173915" y="97.767857142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Next" width="24" height="24"/>
+        <image name="iconoir_user" width="24" height="24"/>
+    </resources>
+</document>
